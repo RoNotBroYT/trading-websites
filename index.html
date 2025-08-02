@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro Trades</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async></script>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Ro Trades</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hot-list">Hot List</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#forum">Forum</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="hot-list" class="hot-list">
+            <h2>Hot Stocks for Breakout</h2>
+            <table id="hot-stock-table">
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Squeeze Duration</th>
+                        <th>Earnings</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="hot-stock-body">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        
+        <section id="charts" class="charts">
+            <h2>Ro Trades Indicator Chart</h2>
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget" style="height: 500px; width: 100%"></div>
+                <script type="text/javascript">
+                    new TradingView.widget({
+                        "width": "100%",
+                        "height": 500,
+                        "symbol": "NASDAQ:AAPL",
+                        "interval": "240",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "withdateranges": true,
+                        "hide_side_toolbar": false,
+                        "allow_symbol_change": true,
+                        "studies": ["BB@tv-basicstudies", "MACD@tv-basicstudies"],
+                        "container_id": "tradingview_widget"
+                    });
+                </script>
+            </div>
+        </section>
+
+        
+        <section id="news" class="news-feed">
+            <h2>Market News</h2>
+            <div id="news-feed">
+                
+            </div>
+        </section>
+
+        
+        <section id="forum" class="forum">
+            <h2>Community Forum</h2>
+            <div id="forum-posts">
+                
+            </div>
+            <form id="forum-form">
+                <textarea id="post-content" placeholder="Share your thoughts..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
