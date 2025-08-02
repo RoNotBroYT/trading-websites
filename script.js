@@ -80,3 +80,6 @@ function showSection(sectionId) {
 function addToWatchlist(symbol) {
     alert(`Added ${symbol} to watchlist!`);
 }
+
+
+    
