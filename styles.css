@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-
 body::before {
     content: '';
     position: fixed;
@@ -17,19 +16,33 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 10% 20%, #0f0 1%, transparent 3%), 
-        radial-gradient(circle at 30% 40%, #ff1493 1%, transparent 3%), 
-        radial-gradient(circle at 50% 60%, #00008b 1%, transparent 3%), 
-        radial-gradient(circle at 70% 30%, #00ffff 1%, transparent 3%),
-        radial-gradient(circle at 90% 80%, #ff0000 1%, transparent 3%), 
-        radial-gradient(circle at 20% 70%, #0f0 1%, transparent 3%), 
-        radial-gradient(circle at 40% 10%, #ff1493 1%, transparent 3%), 
-        radial-gradient(circle at 60% 50%, #00008b 1%, transparent 3%), 
-        radial-gradient(circle at 80% 20%, #00ffff 1%, transparent 3%), 
-        radial-gradient(circle at 15% 85%, #ff0000 1%, transparent 3%); 
+        radial-gradient(circle at 5% 10%, #0f0 0.7%, transparent 2%),
+        radial-gradient(circle at 15% 20%, #ff1493 0.7%, transparent 2%),
+        radial-gradient(circle at 25% 30%, #00008b 0.7%, transparent 2%),
+        radial-gradient(circle at 35% 40%, #00ffff 0.7%, transparent 2%),
+        radial-gradient(circle at 45% 50%, #ff0000 0.7%, transparent 2%),
+        radial-gradient(circle at 55% 60%, #0f0 0.7%, transparent 2%),
+        radial-gradient(circle at 65% 70%, #ff1493 0.7%, transparent 2%),
+        radial-gradient(circle at 75% 80%, #00008b 0.7%, transparent 2%),
+        radial-gradient(circle at 85% 90%, #00ffff 0.7%, transparent 2%),
+        radial-gradient(circle at 95% 5%, #ff0000 0.7%, transparent 2%),
+        radial-gradient(circle at 10% 55%, #0f0 0.7%, transparent 2%),
+        radial-gradient(circle at 20% 65%, #ff1493 0.7%, transparent 2%),
+        radial-gradient(circle at 30% 75%, #00008b 0.7%, transparent 2%),
+        radial-gradient(circle at 40% 85%, #00ffff 0.7%, transparent 2%),
+        radial-gradient(circle at 50% 95%, #ff0000 0.7%, transparent 2%),
+        radial-gradient(circle at 60% 15%, #0f0 0.7%, transparent 2%),
+        radial-gradient(circle at 70% 25%, #ff1493 0.7%, transparent 2%),
+        radial-gradient(circle at 80% 35%, #00008b 0.7%, transparent 2%),
+        radial-gradient(circle at 90% 45%, #00ffff 0.7%, transparent 2%),
+        radial-gradient(circle at 5% 65%, #ff0000 0.7%, transparent 2%),
+        radial-gradient(circle at 15% 75%, #0f0 0.7%, transparent 2%),
+        radial-gradient(circle at 25% 85%, #ff1493 0.7%, transparent 2%),
+        radial-gradient(circle at 35% 95%, #00008b 0.7%, transparent 2%),
+        radial-gradient(circle at 45% 5%, #00ffff 0.7%, transparent 2%),
+        radial-gradient(circle at 55% 15%, #ff0000 0.7%, transparent 2%);
     z-index: -1;
 }
-
 
 body.dark-mode .content {
     background-color: #333;
@@ -38,16 +51,31 @@ body.dark-mode .content {
 
 body.dark-mode::before {
     background: 
-        radial-gradient(circle at 10% 20%, #00cc00 1%, transparent 3%), 
-        radial-gradient(circle at 30% 40%, #cc1076 1%, transparent 3%), 
-        radial-gradient(circle at 50% 60%, #000066 1%, transparent 3%), 
-        radial-gradient(circle at 70% 30%, #00cccc 1%, transparent 3%), 
-        radial-gradient(circle at 90% 80%, #cc0000 1%, transparent 3%),
-        radial-gradient(circle at 20% 70%, #00cc00 1%, transparent 3%), 
-        radial-gradient(circle at 40% 10%, #cc1076 1%, transparent 3%), 
-        radial-gradient(circle at 60% 50%, #000066 1%, transparent 3%), 
-        radial-gradient(circle at 80% 20%, #00cccc 1%, transparent 3%), 
-        radial-gradient(circle at 15% 85%, #cc0000 1%, transparent 3%); 
+        radial-gradient(circle at 5% 10%, #00cc00 0.7%, transparent 2%),
+        radial-gradient(circle at 15% 20%, #cc1076 0.7%, transparent 2%),
+        radial-gradient(circle at 25% 30%, #000066 0.7%, transparent 2%),
+        radial-gradient(circle at 35% 40%, #00cccc 0.7%, transparent 2%),
+        radial-gradient(circle at 45% 50%, #cc0000 0.7%, transparent 2%),
+        radial-gradient(circle at 55% 60%, #00cc00 0.7%, transparent 2%),
+        radial-gradient(circle at 65% 70%, #cc1076 0.7%, transparent 2%),
+        radial-gradient(circle at 75% 80%, #000066 0.7%, transparent 2%),
+        radial-gradient(circle at 85% 90%, #00cccc 0.7%, transparent 2%),
+        radial-gradient(circle at 95% 5%, #cc0000 0.7%, transparent 2%),
+        radial-gradient(circle at 10% 55%, #00cc00 0.7%, transparent 2%),
+        radial-gradient(circle at 20% 65%, #cc1076 0.7%, transparent 2%),
+        radial-gradient(circle at 30% 75%, #000066 0.7%, transparent 2%),
+        radial-gradient(circle at 40% 85%, #00cccc 0.7%, transparent 2%),
+        radial-gradient(circle at 50% 95%, #cc0000 0.7%, transparent 2%),
+        radial-gradient(circle at 60% 15%, #00cc00 0.7%, transparent 2%),
+        radial-gradient(circle at 70% 25%, #cc1076 0.7%, transparent 2%),
+        radial-gradient(circle at 80% 35%, #000066 0.7%, transparent 2%),
+        radial-gradient(circle at 90% 45%, #00cccc 0.7%, transparent 2%),
+        radial-gradient(circle at 5% 65%, #cc0000 0.7%, transparent 2%),
+        radial-gradient(circle at 15% 75%, #00cc00 0.7%, transparent 2%),
+        radial-gradient(circle at 25% 85%, #cc1076 0.7%, transparent 2%),
+        radial-gradient(circle at 35% 95%, #000066 0.7%, transparent 2%),
+        radial-gradient(circle at 45% 5%, #00cccc 0.7%, transparent 2%),
+        radial-gradient(circle at 55% 15%, #cc0000 0.7%, transparent 2%);
 }
 
 .container {
@@ -171,7 +199,6 @@ nav a:hover {
     border-bottom: 1px solid #444;
     padding: 10px 0;
 }
-
 
 @media (max-width: 768px) {
     header {
