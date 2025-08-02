@@ -13,6 +13,25 @@ const newsFeed = [
 
 document.addEventListener('DOMContentLoaded', () => {
     
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        toggleButton.textContent = 'Toggle Light Mode';
+    }
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isNowDark = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isNowDark);
+        toggleButton.textContent = isNowDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+    });
+
+    
+    showSection('home');
+
+    
     const stockTableBody = document.getElementById('hot-stock-body');
     hotStocks.forEach(stock => {
         const row = document.createElement('tr');
@@ -50,7 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
+}
+
+
 function addToWatchlist(symbol) {
     alert(`Added ${symbol} to watchlist!`);
-    
 }
